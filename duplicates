@@ -1,0 +1,21 @@
+// anonymous function
+var fruits=function(array){
+var res=[...new Set(array)];
+return res;
+}
+console.log(fruits(["mango","apple", "orange","mango", "apple","lemon",1,1,"guvi",6,3,3]))
+
+// output
+// duplicates:6 (8) ['mango', 'apple', 'orange', 'lemon', 1, 'guvi', 6, 3]
+
+// arrow function
+
+var fruits1=(array)=>{
+    var res=[...new Set(array)];
+    return res;
+    }
+    console.log(fruits1(["mango","apple", "orange","mango", "apple","lemon",1,1,"guvi",6,3,3]))
+    // output
+// duplicates:15 (8) ['mango', 'apple', 'orange', 'lemon', 1, 'guvi', 6, 3]   
+    
+
